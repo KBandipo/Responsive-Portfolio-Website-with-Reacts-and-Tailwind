@@ -27,6 +27,15 @@ function Projects() {
               githubLink="https://github.com/KBandipo/New-Portfolio"
             />
             {/* <!--card3--> */}
+            <Card
+              photoName="/images/dogs image.JPG"
+              photoAlt="Dogs' image"
+              title=" Dogs shop website"
+              description="A simple online dog shop website page"
+              livePreview="https://kbandipo.github.io/Personal-exercise/"
+              githubLink="https://github.com/KBandipo/Personal-exercise"
+            />
+            {/* <!--card3--> */}
           </div>
         </div>
       </section>
