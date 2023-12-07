@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.nav-link {
+  @apply hover:font-semibold hover:italic;
+}
+.social-media-link {
+  @apply text-red-900 hover:font-semibold hover:italic hover:text-red-950;
+}
