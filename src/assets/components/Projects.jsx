@@ -54,6 +54,16 @@ function Projects() {
               livePreview="https://kbandipo.github.io/Design-To-Do-List-Application/"
               githubLink="https://github.com/KBandipo/Design-To-Do-List-Application"
             />
+            {/* <!--card6--> */}
+            <Card
+              photoName="/images/new card.JPG"
+              photoAlt="Card image"
+              title="Card"
+              description=" A simple card to get insights on how to make business grow"
+              livePreview="https://kbandipo.github.io/Learning-Layout/"
+              githubLink="https://github.com/KBandipo/Learning-Layout"
+            />
+            {/* <!--card7--> */}
           </div>
         </div>
       </section>
