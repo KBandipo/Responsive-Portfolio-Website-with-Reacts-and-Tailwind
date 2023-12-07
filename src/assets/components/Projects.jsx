@@ -35,6 +35,15 @@ function Projects() {
               livePreview="https://kbandipo.github.io/Personal-exercise/"
               githubLink="https://github.com/KBandipo/Personal-exercise"
             />
+            {/* <!--card4--> */}
+            <Card
+              photoName="/images/Rock paper scissors game image.JPG"
+              photoAlt="Rock paper scissors game image"
+              title="Rock paper scissors game"
+              description="Rock paper scissors game image between the Computer and Player"
+              livePreview="https://.iokbandipo.github/Week-10-Rock-Paper-Scissors-game-Responsive-design/"
+              githubLink="https://github.com/KBandipo/Week-10-Rock-Paper-Scissors-game-Responsive-design"
+            />
             {/* <!--card3--> */}
           </div>
         </div>
