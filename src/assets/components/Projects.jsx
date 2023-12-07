@@ -44,7 +44,16 @@ function Projects() {
               livePreview="https://.iokbandipo.github/Week-10-Rock-Paper-Scissors-game-Responsive-design/"
               githubLink="https://github.com/KBandipo/Week-10-Rock-Paper-Scissors-game-Responsive-design"
             />
-            {/* <!--card3--> */}
+            {/* <!--card5--> */}
+            <Card
+              photoName="/images/ToDo list app image.JPG"
+              photoAlt="ToDo list app image"
+              title="A ToDo list app"
+              description="An application designed to help individuals and teams organize,
+              manage, and prioritize tasks."
+              livePreview="https://kbandipo.github.io/Design-To-Do-List-Application/"
+              githubLink="https://github.com/KBandipo/Design-To-Do-List-Application"
+            />
           </div>
         </div>
       </section>
