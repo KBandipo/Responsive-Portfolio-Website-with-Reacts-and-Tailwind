@@ -18,6 +18,15 @@ function Projects() {
               githubLink="https://github.com/KBandipo/Landing-Page"
             />
             {/* <!--card2--> */}
+            <Card
+              photoName="/images/new portfolio.JPG"
+              photoAlt="Portfolio image"
+              title="Portfolio page"
+              description="A simple portfolio"
+              livePreview="https://kbandipo.github.io/New-Portfolio/"
+              githubLink="https://github.com/KBandipo/New-Portfolio"
+            />
+            {/* <!--card3--> */}
           </div>
         </div>
       </section>
