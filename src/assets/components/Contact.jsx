@@ -15,7 +15,7 @@ function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="contact-input-text"
+                className="contact-input-text w-[40%]"
               />
             </div>
             <div className="mb-4">
@@ -26,7 +26,7 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="contact-input-text"
+                className="contact-input-text w-[40%]"
               />
             </div>
             <div className="mb-4">
@@ -36,7 +36,7 @@ function Contact() {
               <textarea
                 id="message"
                 name="message"
-                className="contact-input-text"
+                className="contact-input-text w-[40%]"
               ></textarea>
             </div>
             <button
