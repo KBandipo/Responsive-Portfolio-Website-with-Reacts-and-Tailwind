@@ -64,6 +64,16 @@ function Projects() {
               githubLink="https://github.com/KBandipo/Learning-Layout"
             />
             {/* <!--card7--> */}
+
+            <Card
+              photoName="/images/Footwear sales.JPG"
+              photoAlt="Footwear sales image"
+              title=" Online Footwear sales"
+              description=" Online footwear sales website."
+              livePreview="https://kbandipo.github.io/Footwear-sales/"
+              githubLink="https://github.com/KBandipo/Footwear-sales"
+            />
+            {/* <!--card8--> */}
           </div>
         </div>
       </section>
