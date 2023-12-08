@@ -84,6 +84,16 @@ function Projects() {
               githubLink="https://github.com/KBandipo/A-One-Page-Portfolio-with-HTML-and-Tailwind"
             />
             {/* <!--card9--> */}
+
+            <Card
+              photoName="/images/Naira and Dollar Currency converter app image.JPG"
+              photoAlt="Naira and Dollar Currency converter image page"
+              title=" Naira and Dollar Converter"
+              description="An application to convert Naira and Dollar."
+              livePreview="https://kbandipo.github.io/Currency-converter/"
+              githubLink="https://github.com/KBandipo/Currency-converter"
+            />
+            {/* <!--card9--> */}
           </div>
         </div>
       </section>
