@@ -93,7 +93,16 @@ function Projects() {
               livePreview="https://kbandipo.github.io/Currency-converter/"
               githubLink="https://github.com/KBandipo/Currency-converter"
             />
-            {/* <!--card9--> */}
+            {/* <!--card10--> */}
+
+            <Card
+              photoName="/images/naijaKitchen.JPG"
+              photoAlt="naijaKitchen image page"
+              title="Naija Kitchen Website"
+              description="A Nigerian Kitchen Restaurant"
+              livePreview="https://naija-kitchen-landpage-with-react.vercel.app/"
+              githubLink="https://github.com/KBandipo/Naija-Kitchen-Landpage-with-React"
+            />
           </div>
         </div>
       </section>
