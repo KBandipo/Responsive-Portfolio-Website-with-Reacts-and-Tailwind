@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import ToggleButton from "./ToggleButton";
-// import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav className="fixed z-[50] mx-auto w-full max-w-[100%] bg-white p-4 text-red-700">
