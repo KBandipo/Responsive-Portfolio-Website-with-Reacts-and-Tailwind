@@ -4,8 +4,8 @@ function Contact() {
   return (
     <>
       <MainLayout>
-        <section id="contact" className="mx-auto py-8 sm:py-16">
-          <div className="container mx-auto">
+        <section id="contact" className="mx-auto h-[97vh] py-8 sm:py-16">
+          <div className="container mx-auto pt-10">
             <h2 className="mb-4 text-2xl font-bold text-red-950 sm:text-3xl lg:text-4xl">
               Contact Me
             </h2>

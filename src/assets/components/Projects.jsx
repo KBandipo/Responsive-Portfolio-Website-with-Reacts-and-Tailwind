@@ -5,7 +5,7 @@ function Projects() {
   return (
     <>
       <MainLayout>
-        <section id="projects" className="bg-gray-200 py-16">
+        <section id="projects" className="bg-gray-200 pt-20">
           <div className="container mx-auto">
             <h2 className="mb-4 text-2xl font-bold text-red-950">Projects</h2>
             {/* < Proj Section */}

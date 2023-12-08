@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <MainLayout>
-        <section id="about" className="py-16">
+        <section id="about" className="h-[97vh] pt-20">
           <div className="container mx-auto">
             <h2 className="mb-2 text-2xl font-bold text-red-950">About Me</h2>
             <p className="text-red-900">
