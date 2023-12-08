@@ -74,6 +74,16 @@ function Projects() {
               githubLink="https://github.com/KBandipo/Footwear-sales"
             />
             {/* <!--card8--> */}
+
+            <Card
+              photoName="/images/A one page Portfolio.JPG"
+              photoAlt="A one page Portfolio image"
+              title=" Portfolio page"
+              description="A one page Portfolio"
+              livePreview="https://kbandipo.github.io/A-One-Page-Portfolio-with-HTML-and-Tailwind/"
+              githubLink="https://github.com/KBandipo/A-One-Page-Portfolio-with-HTML-and-Tailwind"
+            />
+            {/* <!--card9--> */}
           </div>
         </div>
       </section>
