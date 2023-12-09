@@ -1,6 +1,11 @@
-function Card(props) {
-  const { photoName, photoAlt, title, description, livePreview, githubLink } =
-    props;
+function Card({
+  photoName,
+  photoAlt,
+  title,
+  description,
+  livePreview,
+  githubLink,
+}) {
   return (
     <>
       <div className="max-w-sm overflow-hidden rounded shadow-lg hover:shadow-xl">
