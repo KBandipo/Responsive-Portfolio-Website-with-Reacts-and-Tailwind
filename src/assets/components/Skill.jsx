@@ -6,8 +6,8 @@ function Skill({ skill, color, level }) {
     >
       <span>{skill}</span>
       <span>
-        {level === "advance" && "🌟"}
-        {level === "intermediate" && "🛠️"}
+        {level === "advance" && "👌"}
+        {level === "intermediate" && "👍"}
         {level === "beginner" && "🌱"}
       </span>
     </div>
