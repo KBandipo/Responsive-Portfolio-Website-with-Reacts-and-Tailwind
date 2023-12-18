@@ -1,11 +1,16 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-// import ToggleButton from "./ToggleButton";
 
 function NavBar() {
+  const [showLinks, setShowLinks] = useState(false);
+
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+
   return (
     <nav className="fixed z-[50] mx-auto w-full max-w-[100%] bg-white p-4 text-red-700 shadow-md">
-      <div className="container flex items-center justify-between">
+      <div className="container flex justify-between sm:items-center">
         <a
           href="#"
           className="text-[ #e6eff9] text-3xl font-bold tracking-widest"
@@ -13,7 +18,7 @@ function NavBar() {
           Portfolio
         </a>
 
-        <ul className="hidden space-x-5 sm:flex">
+        <ul className={`space-x-5 ${showLinks ? "flex" : ""} hidden sm:flex`}>
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +118,7 @@ function NavBar() {
           </li>
         </ul>
         <div className="sm:hidden">
-          <button className="text-[#B91C1C]">
+          <button onClick={toggleLinks} className="text-[#B91C1C]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -129,9 +134,28 @@ function NavBar() {
               />
             </svg>
           </button>
+
+          {showLinks && (
+            <div className="mt-0 flex flex-col space-y-0  sm:hidden">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+              <Link to="/skills" className="nav-link">
+                Skills
+              </Link>
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+              <Link to="/contact" className="nav-link">
+                Contact
+              </Link>
+              <Link to="/projects" className="nav-link">
+                Projects
+              </Link>
+            </div>
+          )}
         </div>
       </div>
-      {/* <ToggleButton /> */}
     </nav>
   );
 }
