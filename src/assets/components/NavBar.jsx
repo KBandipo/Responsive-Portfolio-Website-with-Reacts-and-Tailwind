@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ darkMode, toggleTheme }) {
   const [showLinks, setShowLinks] = useState(false);
 
   const toggleLinks = () => {
@@ -9,11 +9,17 @@ function NavBar() {
   };
 
   return (
-    <nav className="fixed z-[50] mx-auto w-full max-w-[100%] bg-white p-4 text-red-700 shadow-md">
+    <nav
+      className={`fixed z-[50] mx-auto w-full max-w-[100%] p-4 shadow-md ${
+        darkMode ? "bg-gray-800 text-gray-300" : "bg-white text-red-700"
+      }`}
+    >
       <div className="container flex justify-between sm:items-center">
         <a
           href="#"
-          className="text-[ #e6eff9] text-3xl font-bold tracking-widest"
+          className={`text-3xl font-bold tracking-widest ${
+            darkMode ? "text-gray-300" : "text-red-700"
+          }`}
         >
           Portfolio
         </a>
@@ -25,7 +31,7 @@ function NavBar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke=" #B91C1C"
+              stroke={darkMode ? "#a0aec0" : "#B91C1C"}
               className="inline-block h-5 w-5"
             >
               <path
@@ -44,7 +50,7 @@ function NavBar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="#B91C1C"
+              stroke={darkMode ? "#a0aec0" : "#B91C1C"}
               className="inline-block h-5 w-5"
             >
               <path
@@ -64,7 +70,7 @@ function NavBar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="#B91C1C"
+              stroke={darkMode ? "#a0aec0" : "#B91C1C"}
               className="inline-block h-5 w-5"
             >
               <path
@@ -83,7 +89,7 @@ function NavBar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="#B91C1C"
+              stroke={darkMode ? "#a0aec0" : "#B91C1C"}
               className="inline-block h-5 w-5"
             >
               <path
@@ -102,7 +108,7 @@ function NavBar() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="#B91C1C"
+              stroke={darkMode ? "#a0aec0" : "#B91C1C"}
               className="inline-block h-5 w-5"
             >
               <path
@@ -117,14 +123,19 @@ function NavBar() {
             </Link>
           </li>
         </ul>
-        <div className="sm:hidden">
-          <button onClick={toggleLinks} className="text-[#B91C1C]">
+        <div className="">
+          <button
+            onClick={toggleLinks}
+            className={`${
+              darkMode ? "text-gray-300" : "text-[#B91C1C]"
+            } sm:hidden`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="#B91C1C"
+              stroke={darkMode ? "#a0aec0" : "#B91C1C"}
               className="h-6 w-6"
             >
               <path
@@ -133,6 +144,13 @@ function NavBar() {
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
+          </button>
+
+          <button
+            onClick={toggleTheme}
+            className={`text-${darkMode ? "gray-300" : "[#B91C1C]"} ml-4`}
+          >
+            {darkMode ? "🌙" : "☀️"}
           </button>
 
           {showLinks && (

@@ -1,10 +1,10 @@
 import MainLayout from "../../Layout/MainLayout";
 import Card from "./Card";
 
-function Projects() {
+function Projects({ darkMode, toggleTheme }) {
   return (
     <>
-      <MainLayout>
+      <MainLayout darkMode={darkMode} toggleTheme={toggleTheme}>
         <section id="projects" className="bg-gray-200 pt-20">
           <div className="container mx-auto">
             <h2 className="mb-4 text-2xl font-bold text-red-950">Projects</h2>

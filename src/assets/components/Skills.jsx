@@ -12,11 +12,15 @@ const skills = [
   { skill: "SASS", level: "beginner", color: "#44dddd" },
 ];
 
-function Skills() {
+function Skills({ darkMode, toggleTheme }) {
   return (
     <>
-      <MainLayout>
-        <div className="mx-auto h-[96vh] max-w-md overflow-hidden rounded-xl bg-white p-10 pt-24 shadow-md md:max-w-[50%]">
+      <MainLayout darkMode={darkMode} toggleTheme={toggleTheme}>
+        <div
+          className={`mx-auto h-[96vh] max-w-md overflow-hidden ${
+            darkMode ? "bg-gray-800 text-white" : "bg-white"
+          }rounded-xl  p-10 pt-24 shadow-md md:max-w-[50%]`}
+        >
           <img
             src="/images/ken1.jpg"
             alt="Bandipo Kehinde's Picture"
@@ -27,7 +31,9 @@ function Skills() {
               I'm a frontend web developer, this are my skills:
             </h2>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div
+            className={`flex flex-wrap gap-2  ${darkMode ? "text-white" : ""}`}
+          >
             {skills.map((skill) => (
               <Skill
                 key={skill.skill}

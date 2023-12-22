@@ -1,12 +1,14 @@
 import MainLayout from "../../Layout/MainLayout";
 
-function Home() {
+function Home({ darkMode, toggleTheme }) {
   return (
     <>
-      <MainLayout>
+      <MainLayout darkMode={darkMode} toggleTheme={toggleTheme}>
         <section
           id="home"
-          className="mx-auto h-[97vh] bg-gray-200 p-8 pt-[50px] text-red-700 sm:p-16"
+          className={`mx-auto h-[96vh]  ${
+            darkMode ? "bg-gray-800 text-gray-300" : "bg-gray-200 text-red-700"
+          }p-8 pt-[50px]  sm:p-16`}
         >
           <div className="flex flex-col-reverse items-center space-y-[10px] pt-[50px] sm:flex-row sm:space-x-16 sm:space-y-0">
             <div className="container mx-auto overflow-hidden">
@@ -16,11 +18,20 @@ function Home() {
                 className="h-[400px] w-[400px] transform rounded-[50%] object-cover hover:rotate-90 sm:h-[500px] sm:w-[500px]"
               />
             </div>
+
             <div className="container text-center sm:w-full">
-              <h1 className="text-2xl font-bold sm:text-3xl">
+              <h1
+                className={`text-2xl font-bold tracking-widest sm:text-3xl ${
+                  darkMode ? "text-gray-300" : "text-red-700"
+                }`}
+              >
                 Hello, I'm Bandipo, Kehinde Olushola.
               </h1>
-              <p className="mt-4 text-base sm:text-lg">
+              <p
+                className={`mt-4 text-base sm:text-lg ${
+                  darkMode ? "text-gray-300" : "text-red-700"
+                }`}
+              >
                 FRONTEND SOFTWARE ENGINEER
               </p>
             </div>

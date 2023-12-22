@@ -1,13 +1,13 @@
 import NavBar from "../assets/components/NavBar";
 import Footer from "../assets/components/Footer";
 
-function MainLayout({ children }) {
+function MainLayout({ children, darkMode, toggleTheme }) {
   return (
     <>
-      <NavBar />
+      <NavBar darkMode={darkMode} toggleTheme={toggleTheme} />
       <main>{children}</main>
 
-      <Footer />
+      <Footer darkMode={darkMode} toggleTheme={toggleTheme} />
     </>
   );
 }
