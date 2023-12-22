@@ -6,7 +6,7 @@ function Contact({ darkMode, toggleTheme }) {
       <MainLayout darkMode={darkMode} toggleTheme={toggleTheme}>
         <section
           id="contact"
-          className={`mx-auto h-[95vh] py-8 sm:py-16 ${
+          className={`mx-auto h-[96vh] py-8 sm:py-16 ${
             darkMode ? "bg-gray-800" : ""
           }`}
         >

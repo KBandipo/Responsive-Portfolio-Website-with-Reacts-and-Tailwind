@@ -6,7 +6,7 @@ function About({ darkMode, toggleTheme }) {
       <MainLayout darkMode={darkMode} toggleTheme={toggleTheme}>
         <section
           id="about"
-          className={`h-[90vh] pt-24  ${
+          className={`h-[96vh] pt-24  ${
             darkMode ? "bg-gray-800 text-gray-300" : ""
           }`}
         >
