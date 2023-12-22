@@ -15,7 +15,7 @@ function Home({ darkMode, toggleTheme }) {
               <img
                 src="/images/ken1.jpg"
                 alt="Bandipo Kehinde's Picture"
-                className="h-[400px] w-[400px] transform rounded-[50%] object-cover hover:rotate-90 sm:h-[500px] sm:w-[500px]"
+                className="mx-auto h-[300px] w-[300px] transform rounded-[50%] object-cover hover:rotate-90 md:h-[500px] md:w-[500px]"
               />
             </div>
 
