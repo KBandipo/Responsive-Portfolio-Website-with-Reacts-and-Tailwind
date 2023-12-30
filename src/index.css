@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 font-sans text-gray-800;
+}
+/* 
+nav {
+  @apply flex items-center justify-around bg-gray-800 p-4 text-white;
+} */
+/* 
+nav a {
+  @apply text-white no-underline;
+}
+
+button {
+  @apply ml-2 cursor-pointer;
+} */
+.nav-link {
+  @apply hover:font-semibold hover:italic;
+}
+.social-media-link {
+  @apply text-red-900 hover:font-semibold hover:italic hover:text-red-950;
+}
+.github-link {
+  @apply text-red-950 hover:font-semibold hover:italic hover:text-red-950 hover:underline;
+}
