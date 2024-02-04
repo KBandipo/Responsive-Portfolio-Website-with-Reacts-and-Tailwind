@@ -6,10 +6,15 @@ const skills = [
   { skill: "CSS", level: "advance", color: "#FF3B00" },
   { skill: "JavaScript", level: "intermediate", color: "#E85F90" },
   { skill: "Tailwind", level: "advance", color: "#DA2399" },
+  { skill: "Bootstrap", level: "intermediate", color: "#44dddd" },
   { skill: "React", level: "intermediate", color: "#F0DAF8" },
   { skill: "Git and Github", level: "intermediate", color: "#e84f99" },
   { skill: "Web Development", level: "intermediate", color: "#55FFCC" },
-  { skill: "SASS", level: "beginner", color: "#44dddd" },
+  { skill: "SASS", level: "beginner", color: "#DAdddd" },
+  { skill: "QA Testing", level: "intermediate", color: "#FF3F" },
+  { skill: "SQL", level: "intermediate", color: "#66ff" },
+  { skill: "Postman", level: "intermediate", color: "#99aa55" },
+  { skill: "Gira", level: "intermediate", color: "#44dd" },
 ];
 
 function Skills({ darkMode, toggleTheme }) {
