@@ -5,11 +5,16 @@ function Skill({ skill, color, level }) {
       style={{ backgroundColor: color }}
     >
       <span>{skill}</span>
+
       <span>
         {level === "advance" && "👌"}
         {level === "intermediate" && "👍"}
         {level === "beginner" && "🌱"}
       </span>
+      {/* 
+      <span>
+        {level === "advance" ? "💪" : level === "intermediate" ? "👍" : "🌱"}
+      </span> */}
     </div>
   );
 }
