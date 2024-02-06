@@ -6,15 +6,15 @@ function Skill({ skill, color, level }) {
     >
       <span>{skill}</span>
 
+      {/* 
+      <span>
+        {level === "advance" ? "💪" : level === "intermediate" ? "👍" : "🌱"}
+      </span> */}
       <span>
         {level === "advance" && "👌"}
         {level === "intermediate" && "👍"}
         {level === "beginner" && "🌱"}
       </span>
-      {/* 
-      <span>
-        {level === "advance" ? "💪" : level === "intermediate" ? "👍" : "🌱"}
-      </span> */}
     </div>
   );
 }
