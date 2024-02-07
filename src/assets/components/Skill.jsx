@@ -1,4 +1,4 @@
-function Skill({ skill, color, level }) {
+function Skill({ skill, level, color }) {
   return (
     <div
       className="flex justify-between gap-2 rounded p-2"
